@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Soohwan Kim Info</title>
    
-    <link rel = "stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"></head>
+    <link rel = "stylesheet" type="text/css" href="style.css">
 <body>
     <div class="frame">
         <nav class="navigator">
@@ -21,24 +21,96 @@
                 <li><a class="nav-menu" href="work.html">WORK</a></li>
             </ul>
         </nav>
- 
-        <h5 class="recent-menu">Project List</h5>
+        
+        <h5 class="recent-menu mb-5">Project List</h5>
        
+        <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Tetris Game [JavaScript Practice] (05/22 ~ 06/22)
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body d-flex flex-column align-items-center">
+                    <img src="img/projectImg//tetris/tetris-screen.png" width="934"/>
+                    <div>
+                        <p>&emsp;This is my first javascript project. When I first tried to learn javascript, I was focused on only the theories of javascript. 
+                          Studying by taking notes, and memorizing javascript concepts only showed me how complex javascript is rather than showing me the purpose of using this language.
+                          But I could not give up as I thought javascript was a step that I must take in order to move forward towards my future career. I decided to try project-based learning and
+                          searched for javascript projects online. I clone coded this simple tetris game by typing each code and understanding it as I went through. To test myself if 
+                          I fully understand my code, I added more features to the game such as pause, hold block, and show next block. Adding hold block function was easy as all I had to do was 
+                          erase current moving block and re-rendering it to hold box when a button was pressed. However, adding a function to show the next block required me to go through my
+                          code many times. I had to make changes to functions that initialize the game to start so that the generated blocks renders in queue box first
+                          instead of rendering immediately on the screen. In order to implement this function, I used two variables, tempNextItem and nextItem, to save the generated blocks
+                          in the queue box before the current moving block is seized. From this project, I learned the importance of project-based learning and going further than just cloning the codes
+                          to fully understand what I programmed.
+                        </p>
+                    </div>
+                    <a class="project-link" href="#" target="_blank">Tetrs-Game - Github</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Movie Chart App [React JS Practice] (06/22)
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body d-flex flex-column align-items-center">
+                  <img src="img/projectImg/movie-app/movie-app-screen.png" width="906"/>
+                  <img src="img/projectImg/movie-app//movie-app-screen2.png" width="906"/>
+                  <div>
+                    <p>hi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Weather Mobile App [React Native Practice] (06/22 ~ 07/22)
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body d-flex flex-column align-items-center">
+                  <img src="" alt="weather app" />
+                  <div>
+                    <p>Link: https://expo.dev/@ethanskim/EthanWeather</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                  Work Travel Hard Mobile App [React Native Practice] (07/22)
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                <div class="accordion-body d-flex flex-column align-items-center">
+                  <img src="" alt="Work Hard Travel Hard App" />
+                  <div>
+                    <p>hi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
  
-        <footer class="footer">
+          <footer class="footer">
             <h3 class="contact">CONTACT ME</h3>
             <div class="links">
-                <a class="instagram-link" href="https://www.instagram.com/rnrjci/">INSTAGRAM</a>
-                <h5 class="email">Personal Email: ethankim9091@gmail.com</h3>
-                <h5 class="phone-number">Phone: 512-566-9091</h5>
+                <a class="github-link" href="https://www.github.com/EthanSKim">GITHUB</a>
+                <a class="github-link" href="https://www.linkedin.com/in/soohwan-kim-8724801bb/">LINKEDIN</a>
+                <a class="github-link" href="https://www.instagram.com/ttekerlook/">INSTAGRAM</a>
+                <a class="email" href="mailto:ethankim9091@gmail.com">Personal Email: ethankim9091@gmail.com</a>
+                <a class="phone-number" href="tel:512-566-9091">Phone: 512-566-9091</a>
             </div>
             <p>Feel free to contact me!</p>
- 
         </footer>
- 
-        </footer>
-    </div>
-   
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>    </div>
 </body>
 </html>
 
