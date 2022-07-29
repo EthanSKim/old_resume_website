@@ -27,11 +27,11 @@
         <div class="accordion">
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                <button class="accordion-button collapsed" type="button" style="font-family: 'Montserrat', sans-serif;" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                   Tetris Game [JavaScript Practice] (05/22 ~ 06/22)
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
                 <div class="accordion-body d-flex flex-column align-items-center">
                     <img src="img/projectImg//tetris/tetris-screen.png" width="934"/>
                     <div>
@@ -65,7 +65,13 @@
                     <img src="img/projectImg/movie-app//movie-app-screen2.png" width="560"/>
                   </div>
                   <div>
-                    <p>hi</p>
+                    <p>&emsp;After getting familiar with javascript, I went on to learn a very useful and popular library: React.js<br>
+                      By using create-react-app, I learned about states, props, JSX, fetching data from api service, and routing to different pages. As it was my first time using
+                      api keys to fetch data, I did not know that I must hide my api key from my user. I learned about .env files and .gitignore files after searching for 
+                      methods to hide my api key before pushing my project to github. However, my api key was still shown in network requests of my site. To fix this, I re-created
+                      my project on a framework called next.js. Next.js provided url re-write function so that I can first send the user to a temporary page before
+                      fetching the data, and then re-direct the user to actual page after masking the url. This way, the user is not able to view requests and does not know the difference in the url.
+                    </p>
                   </div>
                   <a class="project-link" href="https://github.com/EthanSKim/MovieChart" target="_blank">Movie Chart - Github</a>
                   <a class="project-link" href="https://ethanskim.github.io/MovieChart/" target="_blank">Movie Chart - Site</a>
@@ -80,10 +86,21 @@
               </h2>
               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                 <div class="accordion-body d-flex flex-column align-items-center">
-                  <img src="" alt="weather app" />
                   <div>
-                    <p>Link: https://expo.dev/@ethanskim/EthanWeather</p>
+                    <img src="img/projectImg/weather-app/weather-screen2.png" alt="weather-screen2" height="500"/>
+                    <img src="img/projectImg/weather-app/weather-screen.png" alt="weather-screen1" height="500"/>
                   </div>
+                  <div>
+                    <p>
+                      &emsp;This is my first react native project. From clone coding this weather app on the internet, I learned to work with 
+                      expo, react native foundations, styles on react native, and icons that expo provides. I used openweathermap api to fetch
+                      data from the json file. After I clone coded showing the city, date, and temperature, I added more features to the app.
+                      I applied what I learned to add humidity, sunrise/sunset, UVIndex, and wind speed of 7 days from current day. I could 
+                      implement all parts of the app without significant problems since the basics were very similar with react.js.
+                    </p>
+                  </div>
+                  <a class="project-link" href="https://github.com/EthanSKim/WeatherApp" target="_blank">Weather App - Github</a>
+                  <a class="project-link" href="https://expo.dev/@ethanskim/EthanWeather" target="_blank">Weather App - Expo</a>
                 </div>
               </div>
             </div>
@@ -95,10 +112,24 @@
               </h2>
               <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
                 <div class="accordion-body d-flex flex-column align-items-center">
-                  <img src="" alt="Work Hard Travel Hard App" />
                   <div>
-                    <p>hi</p>
+                    <img src="img/projectImg/toDo-app/toDo-screen.png" height="480" alt="Work Hard Travel Hard App" />
+                    <img src="img/projectImg/toDo-app/toDo-screen3.png" height="480" alt="Work Hard Travel Hard App" />
+                    <img src="img/projectImg/toDo-app/toDo-screen5.png" height="480" alt="Work Hard Travel Hard App" />
+                    <img src="img/projectImg/toDo-app/toDo-screen2.png" height="480" alt="Work Hard Travel Hard App" />
+                    <img src="img/projectImg/toDo-app/toDo-screen4.png" height="480" alt="Work Hard Travel Hard App" />
                   </div>
+                  <div>
+                    <p>
+                      &emsp;This is my second project with react native. I learned to work with asyncStorage in react native, which is similar
+                      to localStorage on the web. I clone coded adding the todo on the list, then went on to implement delete, edit, and crossing out the todos in the list. 
+                      Implementing edit function took the longest time because the app had to show an input component instead of the todo when the user pressed on the edit button.
+                      To implement the function, I created a new state called editing to check if the user is trying to edit. I also took the
+                      todo box and made it into a separate component. When editing state is true, it shows the input box and changes it back to
+                      todo component when the user is done editing.
+                    </p>
+                  </div>
+                  <a class="project-link" href="https://github.com/EthanSKim/WorkTravelHardApp" target="_blank">Work Travel Hard App - Github</a>
                 </div>
               </div>
             </div>
