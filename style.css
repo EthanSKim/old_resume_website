@@ -45,7 +45,7 @@ a{
  
 }
  
-a:hover{
+a:not(.sample):not(.highlight_1):not(.highlight_2):hover{
     color: white;
     transition: 0.3s;
 }
@@ -80,33 +80,16 @@ a:hover{
     animation-delay: 0s;
 }
  
-.sample:hover{
-    background-color: rgb(192, 217, 231);
-    transition: 0.3s;
-    color: white;
-}
- 
 .highlight_1{
     color: black;
     animation: change 9s infinite;
     animation-delay: 3s;
 }
  
-.highlight_1:hover{
-    background-color: rgb(192, 217, 231);
-    color: white;
-   
-}
- 
 .highlight_2{
     color:black;
     animation: change 9s infinite;
     animation-delay: 6s;
-}
- 
-.highlight_2:hover{
-    background-color:rgb(192, 217, 231);
-    color: white;
 }
 
 @keyframes change {
@@ -116,7 +99,10 @@ a:hover{
     10%{
         background-color: rgb(192, 217, 231);
     }
-    15%{
+    20%{
+        background-color: rgb(192, 217, 231);
+    }
+    30%{
         background-color: #EFE7E3;
     }
     100%{
@@ -300,6 +286,7 @@ a:hover{
     font-size: 14px;
     font-weight: 600;
     color: #333;
+    font-family: 'Work Sans', sans-serif;
 }
 .skill-box .skill-bar{
     height: 8px;
@@ -318,17 +305,33 @@ a:hover{
     animation: progress 0.7s ease-in-out forwards;
     opacity: 0;
 }
-.skill-per.css{
-    width: 70%;
+.skill-per.reactjs{
+    width: 90%;
     animation-delay: 0.1s;
 }
-.skill-per.javascript{
-    width: 50%;
+.skill-per.react-native{
+    width: 70%;
     animation-delay: 0.2s;
 }
-.skill-per.nodejs{
-    width: 30%;
+.skill-per.java{
+    width: 60%;
     animation-delay: 0.3s;
+}
+.skill-per.cpp{
+    width: 60%;
+    animation-delay: 0.4s;
+}
+.skill-per.python{
+    width: 50%;
+    animation-delay: 0.5s;
+}
+.skill-per.jsp{
+    width: 20%;
+    animation-delay: 0.6s;
+}
+.skill-per.sql{
+    width: 20%;
+    animation-delay: 0.7s;
 }
 @keyframes progress {
     0%{
