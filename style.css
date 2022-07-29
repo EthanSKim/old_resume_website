@@ -76,20 +76,20 @@ a:not(.sample):not(.highlight_1):not(.highlight_2):hover{
  
 .sample{
     color: black;
-    animation: change 9s infinite;
+    animation: change 18s infinite;
     animation-delay: 0s;
 }
  
 .highlight_1{
     color: black;
-    animation: change 9s infinite;
-    animation-delay: 3s;
+    animation: change 18s infinite;
+    animation-delay: 6s;
 }
  
 .highlight_2{
     color:black;
-    animation: change 9s infinite;
-    animation-delay: 6s;
+    animation: change 18s infinite;
+    animation-delay: 12s;
 }
 
 @keyframes change {
@@ -100,9 +100,6 @@ a:not(.sample):not(.highlight_1):not(.highlight_2):hover{
         background-color: rgb(192, 217, 231);
     }
     20%{
-        background-color: rgb(192, 217, 231);
-    }
-    30%{
         background-color: #EFE7E3;
     }
     100%{
@@ -365,4 +362,17 @@ a:not(.sample):not(.highlight_1):not(.highlight_2):hover{
     background-color: #4070f4;
     transform: translateX(-50%) rotate(45deg);
 
+}
+
+.react-icon {
+    animation: rotate 5.5s infinite linear;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(359deg);
+    }
 }
