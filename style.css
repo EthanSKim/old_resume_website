@@ -271,6 +271,35 @@ a:not(.sample):not(.highlight_1):not(.highlight_2):hover{
     box-shadow: 0px 8px 2px #464544;
 }
 
+.accordion-header {
+    transform-origin: top center;
+}
+#panelsStayOpen-headingOne {
+    animation: drop 1s ease-in-out forwards;
+    animation-delay: -0.05s;
+}
+#panelsStayOpen-headingTwo {
+    animation: drop 1.5s ease-in-out forwards;
+    animation-delay: -0.05s;
+}
+#panelsStayOpen-headingThree {
+    animation: drop 2s ease-in-out forwards;
+    animation-delay: -0.05s;
+}
+#panelsStayOpen-headingFour {
+    animation: drop 2.5s ease-in-out forwards;
+    animation-delay: -0.05s;
+}
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: scale(1.07);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 .accordion-button {
     font-family: 'Montserrat', sans-serif;
 }
