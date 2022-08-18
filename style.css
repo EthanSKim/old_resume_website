@@ -121,7 +121,7 @@ a:not(.sample):not(.highlight_1):not(.highlight_2):hover{
  
 .recent-works{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
  
 .footer{
@@ -290,6 +290,10 @@ a:not(.sample):not(.highlight_1):not(.highlight_2):hover{
     animation: drop 2.5s ease-in-out forwards;
     animation-delay: -0.05s;
 }
+#panelsStayOpen-headingFive {
+    animation: drop 3s ease-in-out forwards;
+    animation-delay: -0.05s;
+}
 @keyframes drop {
     0% {
         opacity: 0;
@@ -362,17 +366,21 @@ a:not(.sample):not(.highlight_1):not(.highlight_2):hover{
     width: 60%;
     animation-delay: 1.2s;
 }
+.skill-per.nodejs{
+    width: 60%;
+    animation-delay: 1.3s;
+}
 .skill-per.python{
     width: 50%;
-    animation-delay: 1.3s;
+    animation-delay: 1.4s;
 }
 .skill-per.jsp{
     width: 20%;
-    animation-delay: 1.4s;
+    animation-delay: 1.5s;
 }
 .skill-per.sql{
     width: 20%;
-    animation-delay: 1.5s;
+    animation-delay: 1.6s;
 }
 @keyframes progress {
     0%{
@@ -418,5 +426,33 @@ a:not(.sample):not(.highlight_1):not(.highlight_2):hover{
     }
     100%{
         transform: rotate(359deg);
+    }
+}
+
+#recent-img {
+    flex: 1;
+}
+
+#recent-sentence {
+    flex: 2;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family:'Work Sans', sans-serif;
+}
+
+#arrowImg {
+    animation: shiftRight 3s infinite;
+    margin-top: 70px;
+}
+
+@keyframes shiftRight {
+    0%{
+        translate: 0;
+    }
+    50% {
+        translate: 30px;
+    }
+    100%{
+        translate: 0;
     }
 }
