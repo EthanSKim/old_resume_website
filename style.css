@@ -379,7 +379,7 @@ a:not(.sample):not(.highlight_1):not(.highlight_2):hover{
     animation-delay: 1.5s;
 }
 .skill-per.sql{
-    width: 20%;
+    width: 80%;
     animation-delay: 1.6s;
 }
 @keyframes progress {
