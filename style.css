@@ -294,6 +294,10 @@ a:not(.sample):not(.highlight_1):not(.highlight_2):hover{
     animation: drop 3s ease-in-out forwards;
     animation-delay: -0.05s;
 }
+#panelsStayOpen-headingSix {
+    animation: drop 3.5s ease-in-out forwards;
+    animation-delay: -0.05s;
+}
 @keyframes drop {
     0% {
         opacity: 0;
